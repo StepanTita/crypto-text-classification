@@ -1,0 +1,4 @@
+git+https://github.com/jacobgelling/EdgeGPT.git
+tqdm==4.65.0
+pandas==1.5.3
+numpy==1.24.2

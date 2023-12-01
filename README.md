@@ -138,3 +138,38 @@ _(source, title, description)_
 | model | accuracy | precision | recall   | auroc    | auprc    | f1       |
 |-------|----------|-----------|----------|----------|----------|----------|
 | ada   | 0.704545 | 0.724299  | 0.890805 | 0.742656 | 0.843987 | 0.798969 |
+
+### BERT-base-cased
+
+```
+MODEL_NAME = 'bert-base-cased'
+NUM_LABELS = 2
+
+NUM_EPOCHS = 1
+BATCH_SIZE = 32
+MAX_SEQ_LEN = 512
+LEARNING_RATE = 2e-5
+MAX_GRAD_NORM = 1000
+```
+
+| model           | accuracy | precision | recall | auroc  | auprc  | f1     |
+|-----------------|----------|-----------|--------|--------|--------|--------|
+| BERT-base-cased | 0.6622   | 0.4385    | 0.6622 | 0.5000 | 0.3377 | 0.5276 |
+
+
+### Collect cookies
+
+1. Get a browser that looks like Microsoft Edge.
+
+- a) (Easy) Install the latest version of Microsoft Edge
+- b) (Advanced) Alternatively, you can use any browser and set the user-agent to look like you're using Edge (e.g., `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.51`). You can do this easily with an extension like "User-Agent Switcher and Manager" for [Chrome](https://chrome.google.com/webstore/detail/user-agent-switcher-and-m/bhchdcejhohfmigjafbampogmaanbfkg) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/).
+
+2. Open [bing.com/chat](https://bing.com/chat)
+3. If you see a chat feature, you are good to continue...
+4. Install the cookie editor extension for [Chrome](https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/)
+5. Go to [bing.com](https://bing.com)
+6. Open the extension
+7. Click "Export" on the bottom right, then "Export as JSON" (This saves your cookies to clipboard)
+8. Paste your cookies into a file `bing_cookies_main.json`.
+
+[//]: # (   - NOTE: The **cookies file name MUST follow the regex pattern `bing_cookies_*.json`**, so that they could be recognized by internal cookie processing mechanisms)
