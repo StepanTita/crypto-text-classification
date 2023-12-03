@@ -78,9 +78,9 @@ async def generate_labels(data, cookies, save_rate=5, start_index=0, max_count=3
             data['label_text'].iloc[i] = response['text']
             data['label_sources_text'].iloc[i] = response['sources_text']
 
-            if i % save_rate == 0:
+            if (i + 1) % save_rate == 0:
                 logger.info('Dumping Data...')
-                data.to_csv('./output/classification/crypto_news_plus.csv', index=False)
+                data.to_csv('./output/classification/crypto_news_plus_2.csv', index=False)
 
             count += 1
             time.sleep(random.uniform(a=1, b=10))
@@ -88,7 +88,7 @@ async def generate_labels(data, cookies, save_rate=5, start_index=0, max_count=3
         logger.fatal(e)
     finally:
         logger.info('Dumping Data...')
-        data.to_csv('./output/classification/crypto_news_plus.csv', index=False)
+        data.to_csv('./output/classification/crypto_news_plus_2.csv', index=False)
 
     # print(json.dumps(response, indent=2))  # Returns
     await bot.close()
@@ -99,7 +99,7 @@ def main():
 
     data = pd.read_csv('./output/classification/crypto_news_plus_2.csv')
 
-    asyncio.run(generate_labels(data, cookies, start_index=300, max_count=300))
+    asyncio.run(generate_labels(data, cookies, start_index=702, max_count=300))
 
 
 if __name__ == "__main__":
