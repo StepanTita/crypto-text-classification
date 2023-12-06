@@ -101,7 +101,7 @@ def main():
 
     data = pd.read_csv('./output/classification/crypto_news_plus_2.csv')
 
-    asyncio.run(generate_labels(data, cookies, start_index=0, max_count=300))
+    asyncio.run(generate_labels(data, cookies, start_index=722, max_count=300))
 
 
 if __name__ == "__main__":
