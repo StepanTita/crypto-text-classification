@@ -100,6 +100,21 @@ prediction accuracy and robustness.
 
 Feel free to contribute and improve this project! 🌐📈
 
+## Authors
+
+- **Stepan Tytarenko**<sup>1st</sup>
+  - *Graduate Student Researcher*
+  - *Fordham Graduate School of Arts and Sciences*
+  - New York, USA
+  - Email: stytarenko@fordham.edu
+
+- **Kibru Temesgen Lefebo**<sup>1st</sup>
+  - *Graduate Student Researcher*
+  - *Fordham Graduate School of Arts and Sciences*
+  - New York, USA
+  - Email: klefebo@fordham.edu
+
+
 ### Collect cookies
 
 1. Get a browser that looks like Microsoft Edge.
