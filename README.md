@@ -114,8 +114,10 @@ Feel free to contribute and improve this project! 🌐📈
   - New York, USA
   - Email: klefebo@fordham.edu
 
+***
+_Supplementary:_
 
-### Collect cookies
+## Collect cookies
 
 1. Get a browser that looks like Microsoft Edge.
 
